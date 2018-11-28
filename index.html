@@ -241,9 +241,9 @@ will-change:background-position;
 }
 
 /*IntersectionObserver Animationen*/
-#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,#cc-m-8538782014,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
+#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.in-view#cc-m-8538782014{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
+.in-view.sideanimation{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .in-view#cc-m-8599043214{animation:reveal .45s ease-in-out .6s forwards;}
 
 @keyframes treppe{
@@ -824,7 +824,7 @@ body.chocolat-open&gt;.chocolat-content{
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,.js-lazy-image,#cc-m-8538367014,#cc-m-8538782014,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,##cc-m-8599043214');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,.js-lazy-image,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,#cc-m-8599043214');
 
 //]]>
 </script>
@@ -847,7 +847,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 
 function initObserver() {
   var observer = new IntersectionObserver(callback);
-  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,#cc-m-8538782014,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,#cc-m-8599043214');
+  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,#cc-m-8599043214');
 
   for (var i in items) {
     if (!items.hasOwnProperty(i)) {
@@ -1641,7 +1641,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br class="cc-clear"/>
 
 </div><div id="cc-m-8539642714" class="j-module n j-htmlCode "><picture><source srcset="https://se0cc33489ad718e6.jimcontent.com/download/version/1534879402/module/8536561914/name/squiggle-arrow.svg" type="image/svg+xml" media="(max-width:767px)"/><img style="float:right" class="arrowThree mobileArrowThree" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1536003800/module/8538635414/name/squiggle-arrow-big.svg"/></picture></div><div id="cc-m-8538778614" class="j-module n j-hgrid ">    <div class="cc-m-hgrid-column" style="width: 49%;">
-        <div id="cc-matrix-2226334414"><div id="cc-m-8538782014" class="j-module n j-text "><p class="miniueberschrift" style="text-decoration-color: #aa002f;">
+        <div id="cc-matrix-2226334414"><div id="cc-m-8538782014" class="j-module n j-text sideanimation"><p class="miniueberschrift" style="text-decoration-color: #aa002f;">
     Besuch des Friedrich-List-Gymnasiums
 </p>
 
@@ -1932,7 +1932,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
         </div>
     </div>
-</div></div><div id="cc-m-8599592714" class="j-module n j-hgrid ">    <div class="cc-m-hgrid-column" style="width: 49%;">
+</div></div><div id="cc-m-8599592714" class="j-module n j-hgrid sideanimation ">    <div class="cc-m-hgrid-column" style="width: 49%;">
         <div id="cc-matrix-2248758214"><div id="cc-m-8599621714" class="j-module n j-text "><p style="font: 1.5em Roboto; font-weight: 300; line-height: 1.5;">
     <i>„Hiermit erkläre ich den Staat Los Unterriedos für eröffnet. Ich fordere euch auf, die kommenden Tage mit Fleiß, Tatendrang, Mut, Fairness, Respekt zu füllen und Spaß zu haben.“</i>
 </p>
@@ -1942,7 +1942,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </p></div></div>    </div>
             <div class="cc-m-hgrid-separator" data-display="cms-only"><div></div></div>
         <div class="cc-m-hgrid-column last" style="width: 49%;">
-        <div id="cc-matrix-2248758314"><div id="cc-m-8604148614" class="j-module n j-text "><p style="text-align: center;">
+        <div id="cc-matrix-2248758314"><div id="cc-m-8604148614" class="j-module n j-text introductionText-animate"><p style="text-align: center;">
     <img id="presidentBild" class="js-lazy-image" src="https://image.jimcdn.com/app/cms/image/transf/none/path/se0cc33489ad718e6/image/i7b9009747ada80b1/version/1543265763/image.png" alt="" name="presidentBild" data-src="https://image.jimcdn.com/app/cms/image/transf/dimension=339x10000:format=png/path/se0cc33489ad718e6/image/i0e21848a5421145c/version/1542915930/image.png"/>
 </p></div></div>    </div>
     
