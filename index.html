@@ -611,15 +611,15 @@ html.is-flickity-fullscreen {
 #cc-m-8599592714{display:flex;align-items:center;padding: 0 4vw 0 12vw !important;}
 
 /*daybox*/
-.daybox{margin: auto 0 auto 100px;
+.daybox{display:flex;flex-wrap:wrap;margin: auto 0 auto 100px;
 width: 35%;
 padding: 50px;
 height: 50vh;
--webkit-backdrop-filter:blur(20px)
+-webkit-backdrop-filter:blur(20px);
 }
 
 .dayboxCaption{margin-top:1.5em;font-weight:300;line-height:1.75}
-.dayboxPhotoCaption{position: relative;bottom: 0;right: 0;display: flex;justify-content: end;}
+.dayboxPhotoCaption{align-self:flex-end;}
 
 /*GALLERY*/
 #cc-m-8600686314,#cc-m-8601709014{padding:0 12vw;}
