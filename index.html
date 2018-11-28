@@ -244,7 +244,7 @@ will-change:background-position;
 #cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .in-view.sideanimation{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.in-view#cc-m-8599043214{animation:reveal .45s ease-in-out .6s forwards;}
+
 
 @keyframes treppe{
     from{transform: translate3d(0,75px,0);opacity:0;}
@@ -256,10 +256,6 @@ will-change:background-position;
     
 }
 
-@keyframes reveal{
-    from{background-color:rgba(0,0,0,0);}
-    to{background-color:rgba(0,0,0,.65);}
-}
 
 /*ATTRIBUTION*/
 .attributionIcon{background-image:url(https://se0cc33489ad718e6.jimcontent.com/download/version/1541071430/module/8571774314/name/ui-camera-black.svg);background-size: 16px;height: 16px;width: 16px;background-repeat:no-repeat;display:inline-block;vertical-align:middle;opacity:.6;}
@@ -607,7 +603,7 @@ html.is-flickity-fullscreen {
 
 
 /* ====STAATSTAGE === */
-#cc-m-8599043214{background: url("https://se0cc33489ad718e6.jimcontent.com/download/version/1534099760/module/8534780314/name/14310464_7106-compressor.jpg"); padding:0!important;background-size:cover;background-color:rgba(0,0,0,0);background-blend-mode:overlay;}
+#cc-m-8599043214{background: url("https://se0cc33489ad718e6.jimcontent.com/download/version/1534099760/module/8534780314/name/14310464_7106-compressor.jpg"); padding:0!important;background-size:cover;}
 #cc-m-8599592714{display:flex;align-items:center;padding: 0 4vw 0 12vw !important;}
 
 /*daybox*/
@@ -828,7 +824,7 @@ body.chocolat-open&gt;.chocolat-content{
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,.js-lazy-image,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,#cc-m-8599043214');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,.js-lazy-image,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
 
 //]]>
 </script>
@@ -851,7 +847,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 
 function initObserver() {
   var observer = new IntersectionObserver(callback);
-  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,#cc-m-8599043214');
+  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
 
   for (var i in items) {
     if (!items.hasOwnProperty(i)) {
