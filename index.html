@@ -1046,6 +1046,11 @@ var $grid = $('.grid').imagesLoaded( function() {
 //<![CDATA[
 $(document).ready(function(){
     $('.chocolat-parent').Chocolat();
+    $('.chocolat-img').Chocolat({
+zoomedPaddingX: function (canvasWidth, imgWidth) {
+return canvasWidth / 2
+}
+});
 });
 //]]>
 </script>
