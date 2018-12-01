@@ -607,13 +607,20 @@ html.is-flickity-fullscreen {
 #cc-m-8599592714{display:flex;align-items:center;padding: 0 4vw 0 12vw !important;}
 
 /*daybox*/
-.daybox{display:flex;flex-wrap:wrap;margin: auto 0 auto 100px;
+@media screen and (min-width:768px){.daybox{display:flex;flex-wrap:wrap;margin: auto 0 auto 100px;
 width: 35%;
 padding: 50px;
 padding-bottom:35px;
 height: 50vh;
 -webkit-backdrop-filter:blur(20px);
+}}
+
+@media screen and (max-width:767px){
+    .daybox{padding:30px;height:100vh}
+    .dayboxPhotoCaption{display:none}
 }
+
+
 
 .dayboxCaption{margin-top:1.5em;font-weight:300;line-height:1.75}
 .dayboxPhotoCaption{align-self:flex-end;margin-left:auto}
@@ -1926,7 +1933,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="daybox" style="background-color: RGBA(232, 236, 87, .9);">
         <div id="staatseroeffnung">
             <div style="width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em"></div>
-            <p style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
+            <p class="mobileKapitelueberschrift" style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
                 Staatseröffnung
             </p>
 
