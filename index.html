@@ -644,7 +644,7 @@ height: 50vh;
     cursor : zoom-out;
 }
 .chocolat-open{
-    overflow: hidden;
+    overflow: auto;
 }
 .chocolat-overlay{
     height:100%;
@@ -762,6 +762,7 @@ height: 50vh;
     padding-right: 15px;
     text-align: right;
     margin-top: 10px;
+    direction: rtl;
 }
 .chocolat-wrapper .chocolat-set-title{
     display: inline-block;
@@ -772,15 +773,11 @@ height: 50vh;
 .chocolat-wrapper .chocolat-pagination{
     font-family: Roboto;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
+    unicode-bidi: plaintext;
+    padding-left:15px
 }
 .chocolat-wrapper .chocolat-fullscreen{
-    width: 16px;
-    height: 40px;
-    background: url(https://res.cloudinary.com/unterrieden/image/upload/v1543688377/fullscreen-black.png) 50% 50% no-repeat;
-    display: block;
-    margin:auto;
-    cursor: pointer;
-    float: right;
+ display:none
 }
 .chocolat-wrapper .chocolat-description{
     display: inline-block;
