@@ -252,7 +252,7 @@ will-change:background-position;
 
 
 /*ATTRIBUTION*/
-.attributionIcon{background-image:url(https://se0cc33489ad718e6.jimcontent.com/download/version/1541071430/module/8571774314/name/ui-camera-black.svg);background-size: 16px;height: 16px;width: 16px;background-repeat:no-repeat;display:inline-block;vertical-align:middle;opacity:.6;}
+.attributionIcon{background-image:url("https://se0cc33489ad718e6.jimcontent.com/download/version/1541071430/module/8571774314/name/ui-camera-black.svg");background-size: 16px;height: 16px;width: 16px;background-repeat:no-repeat;display:inline-block;vertical-align:middle;opacity:.6;}
 .attribution{display:inline-block;margin-left:8px;}
 .attributionText{display:inline;font:bold 10px Roboto Mono;text-transform:uppercase;letter-spacing:.08em;color:rgba(0,0,0,.6);}
 .white{color:white!important;}
@@ -672,7 +672,7 @@ height: 50vh;
     margin-left:-16px;
     margin-top:-16px;
     z-index:11;
-    background:url(https://res.cloudinary.com/unterrieden/image/upload/v1543684540/25_1.gif);
+    background:url("https://res.cloudinary.com/unterrieden/image/upload/v1543684540/25_1.gif");
     display:none;
 }
 .chocolat-content{
@@ -735,13 +735,7 @@ height: 50vh;
     margin-bottom: 10px;
 }
 .chocolat-wrapper .chocolat-close{
-    width:50px;
-    height:50px;
-    cursor:pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background:url(../images/close.png) 50% 50% no-repeat;
+display:none
 }
 .chocolat-wrapper .chocolat-bottom{
     position:absolute;
@@ -1006,6 +1000,8 @@ function applyImage(img, src) {
 }
 //]]>
 </script>
+
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
 <script>
@@ -2257,7 +2253,6 @@ for (i = 0; i < coll.length; i++) {
 
 <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
 //<![CDATA[
