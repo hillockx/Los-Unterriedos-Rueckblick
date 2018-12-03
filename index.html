@@ -824,8 +824,8 @@ body.chocolat-open&gt;.chocolat-content{
     opacity: 0;
 }
 
-@media screen and (min-width:768px){.chocolatvideo{width:100%;}}
-@media screen and (max-width:767px){.chocolatvideo{width:100vw;margin:0 -5px}}
+@media screen and (min-width:768px){.chocolatvideoMobile{display:none}.chocolatvideo{width:100%;}}
+@media screen and (max-width:767px){.chocolatvideo{display:none}.chocolatvideoMobile{width:100vw;margin:0 -5px}}
 
 #presidentBild{width:339px;}
 
@@ -2056,6 +2056,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="grid-item">
             <video class="chocolatvideo" preload="none" muted controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,h_1280,q_auto:low/v1543611437/image_1.jpg"><source src="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/IMG_1625_1.mp4" type="video/mp4"></video>
+            <video class="chocolatvideoMobile lazy" autoplay muted loop controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,h_1280,q_auto:low/v1543611437/image_1.jpg"><source data-src="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/IMG_1625_1.mp4" type="video/mp4"></video>
         </div>
 
         <div class="grid-item">
@@ -2264,6 +2265,34 @@ $(document).ready(function(){
 });
 //]]>
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+});</script>
 
 
 <script type="text/javascript">
