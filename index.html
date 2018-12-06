@@ -559,7 +559,7 @@ html.is-flickity-fullscreen {
 @media screen and (max-width:767px){#cc-m-8536961714{padding:0 2.5%!important;}}
 #cc-m-8538367014{padding:0 8vw !important;}
 @media screen and (max-width:767px){#cc-m-8538778614{padding:0 12vw!important;}}
-#cc-m-8538778614{padding:0 4vw 0 12vw!important;}
+#cc-m-8538778614{padding:0 12vw!important;}
 
 /*Staatssymbole*/
 #cc-m-imagesubtitle-image-8538371414,#cc-m-imagesubtitle-image-8538372014,#cc-m-imagesubtitle-image-8538572214,#presidentBild{filter: drop-shadow(1px 1px 3px rgba(32, 33, 36, 0.28));}
@@ -572,7 +572,7 @@ html.is-flickity-fullscreen {
 #cc-m-8538778614
 {display: flex;align-items: center;}
 @media screen and (max-width:767px){#cc-m-8538778614{flex-direction:column;padding:0 2.5% !important;}}
-#cc-m-8538778814{max-width:100%;margin:auto;}
+#cc-m-8538778814{max-width:100%;float:right}
 @media screen and (min-width:768px){#cc-m-8538778814{width:422px;padding: 20px;box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);border-top: 5px solid #aa002f;
 }}
 @media screen and (max-width:767px){#listopia-bild{margin-left:-15px!important;}}
@@ -610,6 +610,7 @@ padding-bottom:35px;
 height: 50vh;
 -webkit-backdrop-filter:blur(20px);
 }}
+@media screen and (min-width:768) and (max-width:1444px){.daybox{width:40vw!important}}
 
 @media screen and (max-width:767px){
     .mobileFlex{display:inherit}
@@ -632,7 +633,7 @@ height: 50vh;
 .grid-item--width2{width:50%}
 .grid-item--width2 img{width:100%}
 @media screen and (min-width:768px){.grid-item img{width:100%;}}
-@media screen and (min-width:768px){.grid-item{margin-bottom:8px;width:290px;}}
+@media screen and (min-width:768px){.grid-item{margin-bottom:8px;/*width:290px;*/}}
 @media screen and (max-width:767px){.grid-item{margin-bottom:10px;width:100%}}
 
 
@@ -1711,7 +1712,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="dayboxCaption" style="color:rgba(0,0,0,.9)">Nach eineinhalb Jahren Vorbereitungszeit ist nun der Moment gekommen: Frau Fuchs übergibt die Leitung an Präsident Frohnmayer und eröffnet den Staat Los Unterriedos.</p>
             
         </div>
-        <div class="dayboxPhotoCaption"><img class="attributionIcon"><p class="attributionText" style="margin-left:5px">SZBZ/Rebekka Groß</p></div></div></div>
+        <div class="dayboxPhotoCaption"><img class="attributionIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg"><p class="attributionText" style="margin-left:5px">SZBZ/Rebekka Groß</p></div></div></div>
     
     </div>
 </div></div>
@@ -2271,8 +2272,8 @@ $('.main-carousel').flickity({
 var $grid = $('.grid').imagesLoaded( function() {
   // init Masonry after all images have loaded
   $grid.masonry({
-  columnWidth: '.grid-sizer',
   itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
   percentPosition: true,
 
 
