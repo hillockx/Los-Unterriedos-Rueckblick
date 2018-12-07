@@ -165,29 +165,23 @@ padding-bottom: .1em;
 }
 
 @media screen and (min-width:768px){
-    #fullscreenDaybox1{
-        position: fixed;
-        top: 0;
-        left: 0;
+    .fullscreenDaybox{
+        position: absolute;
         width: 100%;
         height: 100vh;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
         z-index:9999;
 }
-    #fullscreenDaybox1:not(:target) {
+    .fullscreenDaybox:not(:target) {
         opacity: 0;
         visibility: hidden;
         transition: opacity 1s, visibility 1s;
 }
 
-    #fullscreenDaybox1:target {
+    .fullscreenDaybox:target {
         opacity: 1;
         visibility: visible;
         transition: opacity 1s, visibility 1s;
-
+    
 }
 }
 
@@ -1726,8 +1720,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 </div><div id="cc-m-8599043214" class="j-module n j-text "><div class="mobileFlex" style="height: 100vh; display: flex;">
-    <a href="#fullscreenDaybox1">LLLOOOOOOOOOL</a>
-    <img id="fullscreenDaybox1" src="https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg"/>
+    <a href="#1">LLLOOOOOOOOOL</a>
+    <img id="1" class="fullscreenDaybox" src="https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg"/>
     <div class="daybox" style="background-color: RGBA(232, 236, 87, .9);">
         <div id="staatseroeffnung">
             <div style="width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em"></div>
