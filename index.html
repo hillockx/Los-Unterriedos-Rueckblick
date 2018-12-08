@@ -683,9 +683,14 @@ height: 50vh;
 
 /*MEDIABOX*/
 @media screen and (min-width:768px){
-    .mediabox{display:flex;padding:0 0 0 12vw!important;margin:150px 0}
+    .mediabox{display:flex;flex-direction:row-reverse;padding:0 0 0 12vw!important;margin:150px 0;height:365px}
     .mediabox-item-1{width:40%;margin-right:20px}
-    .mediabox-item-2{width:60%;}
+    .mediabox-item-2{
+        width:60%;    
+        box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+        background-color: #333;
+        padding:25px
+        }
 }
 
 
