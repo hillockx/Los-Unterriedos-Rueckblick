@@ -66,6 +66,7 @@ body.compensate-for-scrollbar {
 .fancybox-toolbar,
 .fancybox-caption,
 .fancybox-navigation .fancybox-button {
+    outline:none
     direction: ltr;
     opacity: 0;
     position: absolute;
@@ -85,7 +86,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-infobar {
     color: #ccc;
-    font-size: 13px;
+    font:12px Roboto; 
     -webkit-font-smoothing: subpixel-antialiased;
     height: 44px;
     left: 0;
