@@ -694,195 +694,7 @@ height: 50vh;
 }
 
 
-/*CHOCOLAT LIGHTBOX */
-.chocolat-zoomable.chocolat-zoomed{
-    cursor : zoom-out;
-}
-.chocolat-open{
-    overflow: auto;
-}
-.chocolat-overlay{
-    height:100%;
-    width:100%;
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:10;
-    background-color:#fff;
-    display: none;
-    opacity: 0.95;
-}
-.chocolat-wrapper{
-    height:100%;
-    width:100%;
-    position:fixed;
-    display: none;
-    left:0;
-    top:0;
-    z-index:16;
-}
-.chocolat-zoomable .chocolat-img{
-    cursor : zoom-in;
-}
-.chocolat-loader{
-    height:64px;
-    width:64px;
-    position:absolute;
-    left:50%;
-    top:50% ;
-    margin-left:-16px;
-    margin-top:-16px;
-    z-index:11;
-    background:url("https://res.cloudinary.com/unterrieden/image/upload/v1543684540/25_1.gif");
-    display:none;
-}
-.chocolat-content{
-    position:fixed;
-    width:0px;
-    height:0px;
-    left:50%;
-    top:50%;
-    z-index:14;
-    text-align: left;
-}
 
-.chocolat-content .chocolat-img{
-    position:absolute;
-    width:100%;
-    height:100%;
-}
-.chocolat-wrapper .chocolat-left{
-    position:absolute;
-    left:0;
-    width:50px;
-    height:100px;
-    top: 50%;
-    margin-top: -50px;
-    cursor:pointer;
-    background:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iY2hldnJvbi1yaWdodCI+CgkJPHBvbHlnb24gcG9pbnRzPSI5NC4zNSwwIDU4LjY1LDM1LjcgMTc1Ljk1LDE1MyA1OC42NSwyNzAuMyA5NC4zNSwzMDYgMjQ3LjM1LDE1MyAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=) 50% 50% no-repeat;
-    transform: scaleX(-1);
-    z-index: 17;
-    display: none;
-
-}
-.chocolat-wrapper .chocolat-right{
-    position:absolute;
-    right:0;
-    width:50px;
-    height:100px;
-    top: 50%;
-    margin-top: -50px;
-    cursor:pointer;
-    background:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iY2hldnJvbi1yaWdodCI+CgkJPHBvbHlnb24gcG9pbnRzPSI5NC4zNSwwIDU4LjY1LDM1LjcgMTc1Ljk1LDE1MyA1OC42NSwyNzAuMyA5NC4zNSwzMDYgMjQ3LjM1LDE1MyAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)  50% 50% no-repeat;
-    z-index: 17;
-    display: none;
-}
-.chocolat-wrapper .chocolat-right.active{
-    display: block;
-}
-.chocolat-wrapper .chocolat-left.active{
-    display: block;
-}
-.chocolat-left.active::after,.chocolat-right.active::after{content:'';}
-.chocolat-wrapper .chocolat-top{
-    position:absolute;
-    top:0px;
-    right: 0;
-    left: 0;
-    line-height:50px;
-    height:50px;
-    overflow: hidden;
-    z-index: 17;
-    margin-bottom: 10px;
-}
-.chocolat-wrapper .chocolat-close{
-display:none
-}
-.chocolat-wrapper .chocolat-bottom{
-    position:absolute;
-    bottom:0;
-    left: 0;
-    right: 0;
-    line-height:40px;
-    height:40px;
-    font-size:12px;
-    z-index: 17;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: right;
-    margin-top: 10px;
-    direction: rtl;
-}
-.chocolat-wrapper .chocolat-set-title{
-    font-family:Roboto Mono;
-    display: inline-block;
-    padding-right: 15px;
-    line-height: 1;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.chocolat-wrapper .chocolat-set-title::after{
-    content: url(https://se0cc33489ad718e6.jimcontent.com/download/version/1541071430/module/8571774314/name/ui-camera-black.svg);
-    width: 14px;
-    height: 14px;
-    background-size: 16px;
-    display: inline-block;
-    margin-right: 3px;
-    vertical-align: sub;
-}
-
-.chocolat-wrapper .chocolat-pagination{
-    font-family: Roboto;
-    unicode-bidi: plaintext;
-    padding-left:15px
-}
-.chocolat-wrapper .chocolat-fullscreen{
- display:none
-}
-
-.chocolat-wrapper .chocolat-description{
-    display: inline-block;
-    float: left;
-    font-family:Roboto
-}
-
-/* no container mode*/
-body.chocolat-open&gt;.chocolat-overlay{
-    z-index:15;
-}
-body.chocolat-open&gt;.chocolat-loader{
-    z-index:15;
-}
-body.chocolat-open&gt;.chocolat-content{
-    z-index:17;
-}
-
-/* container mode*/
-.chocolat-in-container .chocolat-wrapper,
-.chocolat-in-container .chocolat-content,
-.chocolat-in-container .chocolat-overlay{
-    position: absolute;
-}
-.chocolat-in-container{
-    position: relative;
-}
-
-
-.chocolat-zoomable .chocolat-top,
-.chocolat-zoomable .chocolat-bottom,
-.chocolat-zoomable .chocolat-right,
-.chocolat-zoomable .chocolat-left {
-    transition: opacity .3s ease, visibility 0s .3s;
-   opacity: 1;
-}
-
-.chocolat-zoomable.chocolat-zoomed .chocolat-top,
-.chocolat-zoomable.chocolat-zoomed .chocolat-bottom,
-.chocolat-zoomable.chocolat-zoomed .chocolat-right,
-.chocolat-zoomable.chocolat-zoomed .chocolat-left {
-    visibility: hidden;
-    opacity: 0;
-}
 
 @media screen and (min-width:768px){.chocolatvideoMobile{display:none}.chocolatvideo{width:100%;}}
 @media screen and (max-width:767px){.chocolatvideo{display:none}.chocolatvideoMobile{width:100vw;margin:0 -5px}}
@@ -1783,11 +1595,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="grid-mother">
     <div class="grid">
-        <div class="grid-sizer">
-        </div>
+        <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
-
-        <div class="chocolat-parent" data-chocolat-title="Lilly Brieden">
             <div class="grid-item">
                 <a data-fancybox="gallery1" title="Bei der Visa- und Ausweisaustellung" href="https://res.cloudinary.com/unterrieden/image/upload/s--uogFQCuz--/c_scale,f_auto,q_jpegmini,w_2048/v1543764242/Tag%201/Eingang/IMG_1489.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/se0cc33489ad718e6/image/iec5c09f70cd8c357/version/1543424193/image.jpg"/></a>
             </div>
@@ -1859,8 +1668,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="grid-item">
                 <a data-fancybox="gallery1" title="Über allem: Unser geliebter Präsident" href="https://res.cloudinary.com/unterrieden/image/upload/s--3No3t-Vd--/a_auto_right,c_scale,f_auto,h_2048,q_jpegmini/v1543764680/Tag%201/Eingang/IMG_1565.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/a_auto_right,c_scale,f_auto,w_auto,dpr_auto,q_85/v1543764680/Tag%201/Eingang/IMG_1565.jpg"/></a>
             </div>
-
-        </div>
     </div>
 </div>
 
@@ -1889,8 +1696,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="grid">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
-
-        <div class="chocolat-parent" data-chocolat-title="">
             <div class="grid-item">
                 <a data-fancybox="gallery2" href="https://res.cloudinary.com/unterrieden/image/upload/v1543784552/Tag%201/Staatser%C3%B6ffnung/IMG_1573.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,w_auto,dpr_auto/v1543784552/Tag%201/Staatser%C3%B6ffnung/IMG_1573.jpg"/></a>
             </div>
@@ -1978,16 +1783,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="grid-item">
                 <a data-fancybox="gallery2" href="https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/se0cc33489ad718e6/image/i575c874d091201e9/version/1543083564/image.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto/v1543783160/Tag%201/Staatser%C3%B6ffnung/IMG_1683.jpg"/></a>
             </div>
-        </div>
     </div>
 </div>
 
 
     <div class="mediabox">
         <div class="mediabox-item-1">
-            <div class="chocolat-parent">
                 <a data-fancybox="gallery" href="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,q_85,w_2048/v1543956388/Tag%201/2018_07_19_Schule_als_Staat_SZBZ.jpg"><img style="width:100%;height: 365px" class="js-lazy-image cld-responsive" src="https://res.cloudinary.com/unterrieden/image/upload/v1543956797/Tag%201/untitled_1.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,q_80,w_1920/v1543956388/Tag%201/2018_07_19_Schule_als_Staat_SZBZ.jpg"/></a>
-            </div>
         </div>
 
         <div class="mediabox-item-2">
@@ -2001,8 +1803,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="grid">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
-
-        <div class="chocolat-parent" data-chocolat-title="Lilly Brieden">
             <div class="grid-item">
                 <a data-fancybox="gallery3" href="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_2048/v1543676858/Tag%201/IMG_1775.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto/v1543676858/Tag%201/IMG_1775.jpg"/></a>
             </div>
@@ -2030,7 +1830,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="grid-item">
                 <a data-fancybox="gallery3" href="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_2048/v1543678319/Tag%201/IMG_1758.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto/v1543678319/Tag%201/IMG_1758.jpg"/></a>
             </div>
-        </div>
     </div>
 </div>
 
