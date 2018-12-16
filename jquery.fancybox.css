@@ -424,9 +424,6 @@ display:none
     rgba(0, 0, 0, .019) 88%,
     rgba(0, 0, 0, 0) 100%
     );*/
-    display:block;
-    margin: 0 auto;
-    text-align:left;
     bottom: 0;
     color: #eee;
     font-family:Roboto;
@@ -437,6 +434,7 @@ display:none
     padding: 75px 44px 25px 44px;
     pointer-events: none;
     right: 0;
+    text-align: center;
     z-index: 99996;
 }
 
