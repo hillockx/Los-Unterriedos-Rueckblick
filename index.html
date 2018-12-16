@@ -375,21 +375,14 @@ figcaption{font-size: 14px;color: #5f5f5f;line-height:1.5!important;font-weight:
 /*auf tabletformat wird ficaption gecentert anstatt volle weite*/@media screen and (min-width:471px) and (max-width:767px){figcaption{margin:auto;min-width:0!important;}}
 
 /*Lightbox deaktiviert – bilder auf fullscreen*/
-@media screen and (max-width:500px){.lazyload{
+@media screen and (max-width:500px){.lazyload,.lazyloading,.lazyloaded{
     width: 105vw;
     height: auto;
     min-height:150px;
     margin-right: -6px;
     margin-left: -6px;
-    transition:opacity 1s ease;
 
 }}
-    .fade-in{
-        transition:opacity 1s ease
-    }
-    lazyload--handled{
-        transition:opactiy 1s ease;
-    }
 
 
 
@@ -1912,7 +1905,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,.lazyload,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
 
 //]]>
 </script>
@@ -1953,9 +1946,6 @@ if (window.IntersectionObserver) {
 }
 //]]>
 </script>
-
-
-
 
 
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
