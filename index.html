@@ -2155,12 +2155,18 @@ var $grid = $('.grid').imagesLoaded( function() {
 <script>$.fancybox.defaults.toolbar = false;
 </script>
 <script>$('[data-fancybox]').fancybox({
-        protect: true,          
-        afterShow: function() {
-             var imageWidth = $(".fancybox-slide--current .fancybox-image-wrap").width();
-             $(".fancybox-caption").css("width", imageWidth);
-        }       
- });</script>
+    idleTime: false,
+    infobar: false,
+    beforeShow: function() {
+        $(".fancybox-caption").addClass('none');
+    },
+    afterShow: function() {
+        $(".fancybox-caption").wrapInner("<span/>");
+        var imageWidth = $(".fancybox-slide--current .fancybox-content").width();
+        $(".fancybox-caption").css("width", imageWidth);
+        setTimeout($(".fancybox-caption").removeClass('none'), 200);
+    }
+})</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
