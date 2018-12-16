@@ -2154,6 +2154,13 @@ var $grid = $('.grid').imagesLoaded( function() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 <script>$.fancybox.defaults.toolbar = false;
 </script>
+<script>$('[data-fancybox]').fancybox({
+        protect: true,          
+        afterShow: function() {
+             var imageWidth = $(".fancybox-slide--current .fancybox-image-wrap").width();
+             $(".fancybox-caption").css("width", imageWidth);
+        }       
+ });</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
