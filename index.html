@@ -2160,7 +2160,7 @@ $( '[data-fancybox="gallery1"]' ).fancybox({
         var caption = $(this).data('caption') || '';
 
         if ( item.type === 'image' ) {
-            caption = (caption.length ? caption : '') + '<div class="attribution">' + '<img class="attributionIcon whiteOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText white">Lilly Brieden</p>' + '</div>' ;
+            caption = (caption.length ? caption + '<p style="display:inline;">|</p>': '') + '<div class="attribution">' + '<img class="attributionIcon whiteOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText white">Lilly Brieden</p>' + '</div>' ;
         }
 
         return caption;
