@@ -424,6 +424,9 @@ display:none
     rgba(0, 0, 0, .019) 88%,
     rgba(0, 0, 0, 0) 100%
     );*/
+    display:block;
+    margin: 0 auto;
+    text-align:left;
     bottom: 0;
     color: #eee;
     font-family:Roboto;
