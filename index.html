@@ -1692,7 +1692,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="grid-item">
-                <a data-fancybox="gallery2" class="maier" href="https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/se0cc33489ad718e6/image/i0137e96867bc712f/version/1543083589/image.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912814/name/customyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,q_auto:best,w_auto,dpr_auto/v1543783154/Tag%201/Staatser%C3%B6ffnung/2018-07-18_10.28.12.jpg"/></a>
+                <a data-fancybox="gallery2" href="https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/se0cc33489ad718e6/image/i0137e96867bc712f/version/1543083589/image.jpg"><img class="js-lazy-image cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912814/name/customyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,q_auto:best,w_auto,dpr_auto/v1543783154/Tag%201/Staatser%C3%B6ffnung/2018-07-18_10.28.12.jpg"/><figcaption class="melange"><p class="fancycaptiontrenner">|</p><div class="attribution"><img class="attributionIcon whiteOne fancyboxOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText white">Chrisitian Maier</p></div></figcaption></a>
             </div>
 
             <div class="grid-item">
@@ -2149,28 +2149,13 @@ $( '[data-fancybox="gallery1"],[data-fancybox="gallery3"]' ).fancybox({
         return caption;
     }
 });
-$( '.maier' ).fancybox({
-    caption : function( instance, item ) {
-        var caption = $(this).data('caption') || '';
-
-        if ( item.type === 'image' ) {
-            caption = (caption.length ? caption + '<p class="fancycaptiontrenner">|</p>': '') + '<div class="attribution">' + '<img class="attributionIcon whiteOne fancyboxOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText white">Christian Maier</p>' + '</div>' ;
-        }
-
-        return caption;
-    }
+$( '[data-fancybox="gallery2"]' ).fancybox({
+	caption : function( instance, item ) {
+		return $(this).find('figcaption').html();
+	}
 });
-$( '.szbz' ).fancybox({
-    caption : function( instance, item ) {
-        var caption = $(this).data('caption') || '';
 
-        if ( item.type === 'image' ) {
-            caption = (caption.length ? caption + '<p class="fancycaptiontrenner">|</p>': '') + '<div class="attribution">' + '<img class="attributionIcon whiteOne fancyboxOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText white">SZBZ/Rebekka Groß</p>' + '</div>' ;
-        }
-
-        return caption;
-    }
-});</script>
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
