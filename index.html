@@ -2157,10 +2157,7 @@ var $grid = $('.grid').imagesLoaded( function() {
 <script>$('[data-fancybox]').fancybox({
     idleTime: false,
     infobar: false,
-    beforeShow: function() {
-        $(".fancybox-caption").addClass('none');
-    },
-    afterShow: function() {
+    function() {
         $(".fancybox-caption").wrapInner("<span/>");
         var imageWidth = $(".fancybox-slide--current .fancybox-content").width();
         $(".fancybox-caption").css("width", imageWidth);
