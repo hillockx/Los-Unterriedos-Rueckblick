@@ -2154,19 +2154,18 @@ var $grid = $('.grid').imagesLoaded( function() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 <script>$.fancybox.defaults.toolbar = false;
 </script>
-<script>$('[data-fancybox]').fancybox({
-    idleTime: false,
-    infobar: false,
-    beforeShow: function() {
-        $(".fancybox-caption").addClass('none');
-    },
-    afterShow: function() {
-        $(".fancybox-caption").wrapInner("<span/>");
-        var imageWidth = $(".fancybox-slide--current .fancybox-content").width();
-        $(".fancybox-caption").css("width", imageWidth);
-    }
-})</script>
+<script>
+$( '[data-fancybox="gallery1"]' ).fancybox({
+    caption : function( instance, item ) {
+        var caption = $(this).data('caption') || '';
 
+        if ( item.type === 'image' ) {
+            caption = (caption.length ? caption : '') + '<div class="attribution><img class="attributionIcon whiteOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg"><p class="attributionText white">Lilly Brieden</p></div>"' ;
+        }
+
+        return caption;
+    }
+});</script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
