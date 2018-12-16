@@ -387,6 +387,7 @@ display:none
 /* Navigation arrows */
 .fancybox-can-pan .fancybox-navigation{opacity:0}
 .fancybox-can-pan .fancybox-infobar{opacity:0}
+.fancybox-can-pan .fancybox-caption{opacity:0}
 
 .fancybox-navigation .fancybox-button {
     background-clip: content-box;
