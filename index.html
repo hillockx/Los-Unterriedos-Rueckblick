@@ -1433,7 +1433,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Die Sitzverteilung im Parlament
         </figcaption>
     </div>
-</div></div>
+</div><p class="caption">&nbsp;</p></div>
 
 <div id="cc-m-8571927014" class="j-module n j-htmlCode "><div class="mobileCarouselAnimation">
     <div class="mobilcarouseltext" style="color:white;">
@@ -1968,6 +1968,14 @@ $('.main-carousel').flickity({
   fullscreen: true,
   cellAlign: 'left'
 
+});
+var $caption = $('.caption');
+// Flickity instance
+var flkty = $carousel.data('flickity');
+
+$carousel.on( 'select.flickity', function() {
+  // set image caption using img's alt
+  $caption.text( flkty.selectedElement.figcaption )
 });
 //]]>
 </script>
