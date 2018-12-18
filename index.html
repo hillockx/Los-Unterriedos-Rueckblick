@@ -174,7 +174,7 @@ padding-bottom: .1em;
         z-index:9999;
 }
 
-
+@media screen and (min-width:768px){
     .fullscreenWrapper:not(:target) {
         opacity: 0;
         visibility: hidden;
@@ -207,7 +207,8 @@ padding-bottom: .1em;
         right: 0;
         top:0;
     }
-}
+}}
+@media screen and (max-width:767px){.fullscreenLink,.fullscreenWrapper{display:none}}
 
 /*header auf mobil deaktiviert*/
 @media screen and (max-width:767px){header{display:none;}}
@@ -620,7 +621,7 @@ html.is-flickity-fullscreen {
 /* ====STAATSTAGE === */
 #cc-m-8599043214{background: url("https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg"); padding:0!important;background-size:cover;}
 @media screen and (min-width:768px){#cc-m-8599592714{display:flex;align-items:center;padding: 0 4vw 0 12vw !important;}}
-@media screen and (max-width:767px){#cc-m-8599592714{display:flex;padding:0 4vw!important;flex-wrap: wrap}}
+@media screen and (max-width:767px){#cc-m-8599592714{display:flex;flex-wrap: wrap;}#cc-matrix-2248758214{padding:0 4vw}#cc-m-8604148614{padding:0}}
 
 /*daybox*/
 @media screen and (min-width:768px){.daybox{display:flex;flex-wrap:wrap;margin: auto 0 auto 100px;
@@ -675,7 +676,7 @@ height: 50vh;
 @media screen and (max-width:767px){.chocolatvideo{display:none}.chocolatvideoMobile{width:100vw;margin:0 -5px}}
 
 @media screen and (min-width:768px){#presidentBild{width:339px;}}
-@media screen and (max-width:767px){#presidentBild{width:100%}}
+@media screen and (max-width:767px){#presidentBild{width:100%!important}}
 
 .fancycaptiontrenner{display:inline;margin-left:8px}
 .fancyboxOne{margin-right:5px}
