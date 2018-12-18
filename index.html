@@ -227,13 +227,13 @@ padding-bottom: .1em;
 #cc-m-8532726214{
 padding:0!important;
 height: 100vh;
+will-change:background-position;
 background-size: cover;
 background-color:#005dff;
-background-blend-mode:multiply;
+/*background-blend-mode:multiply;*/
 /*Animation*/
 background-position: 0 0;
 animation: bg 35s linear infinite alternate;
-will-change:background-position;
 /*(1/2) Titelüberschrift durch CSS Grid centern*/
 }
 
@@ -245,7 +245,7 @@ will-change:background-position;
 @supports not (background-blend-mode: multiply){#edge{-webkit-backdrop-filter:blur(4px)}#scrollButtonHide{display:none}#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614{opacity:1!important;}}
 
 /*(2/2) Titelüberschrift durch flexbox centern*/
-.inhalt{/*margin:auto;margin-top:35vh;*/background-color: #005dff;mix-blend-mode: multiply;width:100%;height:100%}
+.inhalt{/*margin:auto;margin-top:35vh;*/background-color: #005dff;mix-blend-mode: multiply;width:100%;height:100%;justify-content: center;align-items: center;display: flex;}
 .inhaltText{margin:auto;margin-top:35vw}
 @media screen and (max-width:767px){.inhalt{margin-left:calc(5px + 2.5%);margin-top:30vh;}}
 
