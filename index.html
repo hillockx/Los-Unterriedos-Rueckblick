@@ -674,11 +674,17 @@ height: 50vh;
 @media screen and (min-width:768px){.chocolatvideoMobile{display:none}.chocolatvideo{width:100%;}}
 @media screen and (max-width:767px){.chocolatvideo{display:none}.chocolatvideoMobile{width:100vw;margin:0 -5px}}
 
-#presidentBild{width:339px;}
+@media screen and (min-width:768px){#presidentBild{width:339px;}}
+@media screen and (max-width:767px){#presidentBild{width:100%}}
 
 .fancycaptiontrenner{display:inline;margin-left:8px}
 .fancyboxOne{margin-right:5px}
 .melange{display:none}
+
+@media screen and (max-width:768px){
+    .mobileVideoLinkHide{pointer-events:none}
+    .mobileVideoImgHide{display:none}
+}
 </style>
 
 
@@ -1742,9 +1748,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="grid-item">
-                <a data-fancybox="gallery2" data-width="1280" data-height="1920" href="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/Tag%201/IMG_1625_1.mp4">
-                <img class="lazyload cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto,q_auto:eco/v1543611437/Tag%201/image_1.jpg">
-                <video class="chocolatvideoMobile lazy" autoplay muted loop controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,h_1920,q_auto:eco/v1543611437/Tag%201/image_1.jpg"><source data-src="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/Tag%201/IMG_1625_1.mp4" type="video/mp4"></video></a>
+                <a class="mobileVideoLinkHide" data-fancybox="gallery2" data-width="1280" data-height="1920" href="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/Tag%201/IMG_1625_1.mp4">
+                <img class="lazyload cld-responsive mobileVideoImgHide" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto,q_auto:eco/v1543611437/Tag%201/image_1.jpg">
+                <video class="chocolatvideoMobile lazy" autoplay muted loop controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_600,q_auto:eco/v1543611437/Tag%201/image_1.jpg"><source data-src="https://res.cloudinary.com/unterrieden/video/upload/v1543593445/Tag%201/IMG_1625_1.mp4" type="video/mp4"></video></a>
             </div>
 
             <div class="grid-item">
@@ -1752,9 +1758,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
            <div class="grid-item">
-                 <a data-fancybox="gallery2" data-width="1280" data-height="1920" href="https://res.cloudinary.com/unterrieden/video/upload/v1543593415/Tag%201/IMG_1658_1.mp4">
-                <img class="lazyload cld-responsive" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_1280,dpr_auto,q_auto:low/v1543595885/Tag%201/IMG_1658.jpg">
-                <video class="chocolatvideoMobile lazy" autoplay muted loop controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_auto,dpr_auto,q_auto:low/v1543595885/Tag%201/IMG_1658.jpg"><source data-src="https://res.cloudinary.com/unterrieden/video/upload/v1543593415/Tag%201/IMG_1658_1.mp4" type="video/mp4"></video></a>
+                 <a class="mobileVideoLinkHide" data-fancybox="gallery2" data-width="1280" data-height="1920" href="https://res.cloudinary.com/unterrieden/video/upload/v1543593415/Tag%201/IMG_1658_1.mp4">
+                <img class="lazyload cld-responsive mobileVideoImgHide" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" data-src="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_1280,dpr_auto,q_auto:low/v1543595885/Tag%201/IMG_1658.jpg">
+                <video class="chocolatvideoMobile lazy" autoplay muted loop controls poster="https://res.cloudinary.com/unterrieden/image/upload/c_scale,f_auto,w_600,dpr_auto,q_auto:low/v1543595885/Tag%201/IMG_1658.jpg"><source data-src="https://res.cloudinary.com/unterrieden/video/upload/v1543593415/Tag%201/IMG_1658_1.mp4" type="video/mp4"></video></a>
             </div>
 
             <div class="grid-item">
