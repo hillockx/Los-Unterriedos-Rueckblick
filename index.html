@@ -133,9 +133,9 @@ text-transform: uppercase;
     background-size: 30px 30px;
     background-repeat: no-repeat;
 }
-.playerButton:hover{color:transparent!important}
+.playerButton:hover{color:transparent!important;transition: transform .3s ease-in;}
 .playerButton:hover::before{
-    transform:translateX(100px)
+    transform:translateX(250%);transition:transform .4s ease-out;
 }
 
 
