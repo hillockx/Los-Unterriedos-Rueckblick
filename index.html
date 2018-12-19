@@ -707,7 +707,8 @@ height: 50vh;
 }
 
 
-.audiobox{height:150px;overflow:hidden;transform:scale(-1)}
+.audiobox{height:150px;overflow:hidden;}
+.audioboxcontainer{transform:scaleY(-1)}
 .line{
     width: 6px;
     display: inline-block;
@@ -1883,19 +1884,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="mediabox-item-2">
             <div class="mediaboxPlayer">
-            <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube-nocookie.com/embed/6B0a2CBPRyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube-nocookie.com/embed/6B0a2CBPRyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="audiobox">
+                    <div class="audioboxcontainer">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                        <div class="line line-4"></div>
+                        <div class="line line-5"></div>
+                        <div class="line line-6"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="audiobox">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-        <div class="line line-4"></div>
-        <div class="line line-5"></div>
-        <div class="line line-6"></div>
-    </div>
 
 <div class="grid-mother">
     <div class="grid">
