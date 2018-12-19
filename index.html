@@ -708,7 +708,7 @@ height: 50vh;
 }
 
 
-.audiobox{height:40px;overflow:hidden;transform:scaleY(-1)}
+.audiobox{height:40px;overflow:hidden;/*transform:scaleY(-1)*/;margin-left:15px}
 .line{
     width: 6px;
     display: inline-block;
@@ -722,6 +722,8 @@ height: 50vh;
 .line-3{animation-delay: 45ms;animation-name: bounceHigh;height: 190%;}
 .line-4{animation-delay: 60ms;animation-name: bounceHigh;height: 152%;}
 .line-5{animation-delay: 75ms;animation-name: bounceLow;height: 104%;}
+
+.radioLogo{font:20px Roboto Mono;font-weight: bold;color:white}
 
 @keyframes bounceHigh{
     0%, 100%, 14% {
@@ -1885,11 +1887,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="mediaboxPlayer">
                 <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube-nocookie.com/embed/6B0a2CBPRyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="audiobox">
+                    <span style="transform:scaleY(-1)">
                         <div class="line line-1"></div>
                         <div class="line line-2"></div>
                         <div class="line line-3"></div>
                         <div class="line line-4"></div>
                         <div class="line line-5"></div>
+                        <p class="radioLogo">Radio</p>
+                    </span>
                 </div>
             </div>
         </div>
