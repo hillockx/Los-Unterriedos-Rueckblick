@@ -706,6 +706,77 @@ height: 50vh;
         }
 }
 
+.line{
+    width: 6px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3px;
+    background-color: #FF6A56;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+.line-1{animation-delay: 15ms;animation-name: bounceHigh;height: 19%;}
+.line-2{animation-delay: 30ms;animation-name: bounceLow;height: 29%;}
+.line-3{animation-delay: 45ms;animation-name: bounceHigh;height: 60%;}
+.line-4{animation-delay: 60ms;animation-name: bounceHigh;height: 52%;}
+.line-5{animation-delay: 75ms;animation-name: bounceLow;height: 44%;}
+.line-6{animation-delay: 90ms;animation-name: bounceHigh;height: 29%;}
+
+@keyframes bounceHigh{
+    0%, 100%, 14% {
+    -webkit-transform: translateY(-50%) scaleY(1.01);
+    transform: translateY(-50%) scaleY(1.01);
+}
+21% {
+    -webkit-transform: translateY(-50%) scaleY(1.1);
+    transform: translateY(-50%) scaleY(1.1);
+}
+
+33% {
+    -webkit-transform: translateY(-50%) scaleY(.7);
+    transform: translateY(-50%) scaleY(.7);
+}
+41%, 71% {
+    -webkit-transform: translateY(-50%) scaleY(1.05);
+    transform: translateY(-50%) scaleY(1.05);
+}
+56% {
+    -webkit-transform: translateY(-50%) scaleY(.9);
+    transform: translateY(-50%) scaleY(.9);
+}
+
+86%, 91% {
+    -webkit-transform: translateY(-50%) scaleY(.85);
+    transform: translateY(-50%) scaleY(.85);
+}
+}
+@keyframes bounceHigh{
+    0%, 100%, 14%, 71% {
+    -webkit-transform: translateY(-50%) scaleY(1.01);
+    transform: translateY(-50%) scaleY(1.01);
+}
+21% {
+    -webkit-transform: translateY(-50%) scaleY(1.05);
+    transform: translateY(-50%) scaleY(1.05);
+}
+33% {
+    -webkit-transform: translateY(-50%) scaleY(.7);
+    transform: translateY(-50%) scaleY(.7);
+}
+41% {
+    -webkit-transform: translateY(-50%) scaleY(.95);
+    transform: translateY(-50%) scaleY(.95);
+}
+56% {
+    -webkit-transform: translateY(-50%) scaleY(.9);
+    transform: translateY(-50%) scaleY(.9);
+}
+86%, 91% {
+    -webkit-transform: translateY(-50%) scaleY(.85);
+    transform: translateY(-50%) scaleY(.85);
+}
+}
+
 
 
 
@@ -1814,6 +1885,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube-nocookie.com/embed/6B0a2CBPRyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+    </div>
+
+    <div class="audiobox">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+        <div class="line line-6"></div>
     </div>
 
 <div class="grid-mother">
