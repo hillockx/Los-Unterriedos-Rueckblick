@@ -708,8 +708,8 @@ height: 50vh;
 }
 
 
-.audiobox{height:40px;overflow:hidden;margin-left:15px}
-.audioboxcontainer{transform:scaleY(-1)}
+.audiobox{height:40px;overflow:hidden;margin-left:15px;display:flex;align-items:center}
+.audioboxcontainer{transform:scaleY(-1);height:100%}
 .line{
     width: 6px;
     display: inline-block;
@@ -724,7 +724,7 @@ height: 50vh;
 .line-4{animation-delay: 60ms;animation-name: bounceHigh;height: 152%;}
 .line-5{animation-delay: 75ms;animation-name: bounceLow;height: 104%;}
 
-.radioLogo{font:20px Roboto Mono;font-weight: bold;color:white;display:inline}
+.radioLogo{font:20px Roboto Mono;font-weight: bold;color:white;display:inline;margin-left:10px;margin-top:5px}
 
 @keyframes bounceHigh{
     0%, 100%, 14% {
