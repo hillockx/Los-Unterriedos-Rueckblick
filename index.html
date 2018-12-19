@@ -567,10 +567,6 @@ html.is-flickity-fullscreen {
 .content {
     padding: 0 4vw 0 4vw;
     background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: max-height;
     box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 @media screen and (max-width:767px){.content{padding: 0 calc(2.5vw + 5px) !important;}.collapsible{padding:18px 4vw 13px !important;border-top:1px solid;}}
@@ -1140,7 +1136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div style="width:100%;margin-top:3em;border-bottom:1px solid black">
 </div></div><div id="cc-m-8538554314" class="j-module n j-htmlCode "><a href="#text" class="collapsible">Artikel aus der Schülerzeitung (April 2017)</a>
 <div id="text">
-<div class="content text textInhalt">
+<div class="content text" id="textInhalt">
     <div class="left-row">
         <p class="miniueberschrift">
             „Schule als Staat“ – jetzt auch bei uns am Unterrieden!
