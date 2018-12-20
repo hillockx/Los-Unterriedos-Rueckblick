@@ -134,10 +134,10 @@ text-transform: uppercase;
     background-repeat: no-repeat;
     transition: transform .3s ease-in;
 }
-.playerButton:hover{color:transparent!important;}
+@media screen and (min-width:768px){.playerButton:hover{color:transparent!important;}
 .playerButton:hover::before{
     transform:translateX(250%);transition:transform .4s ease-out;
-}
+}}
 
 @media screen and (min-width:768px){
 #play{
@@ -203,12 +203,12 @@ text-transform: uppercase;
 }
     #textInhalt{
     position:fixed;
-	width: 60%;
 	background: #fff;
     height:85%;
     border-radius:5px;
     overflow:auto
 }
+@media screen and (min-width:768px){#textInhalt{width:60%}}
 
 @media screen and (min-width:768px){
     .fullscreenWrapper:not(:target) {
@@ -282,7 +282,7 @@ will-change:background-position;
 
 /*(2/2) Titelüberschrift durch flexbox centern*/
 .inhalt{margin:auto;margin-top:35vh;}
-@media screen and (max-width:767px){.inhalt{margin-left:calc(5px + 2.5%);margin-top:30vh;}}
+@media screen and (max-width:767px){.inhalt{margin-left:calc(5px + 2.5%);margin-top:28vh;}}
 
 /*Titelüberschrift*/
 #daswar{font: 6em var(--header-font-family); color: white; margin-left: -.08em; margin-bottom: .1em;}
