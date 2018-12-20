@@ -705,13 +705,13 @@ height: 50vh;
     .mediaboxPlayer{display:flex}
 }
 @media screen and (max-width:767px){
-    .mediabox{display:flex;}
-    /*.mediabox-item-1{}*/
+    .mediabox{display:flex;flex-direction: column;}
     .mediabox-item-2{
         background-color: #333;
-        padding:25px
-        }
-    .mediaboxPlayer{display:flex}
+        padding:25px;margin-top:1em}
+    .mediaboxPlayer{display:flex;flex-direction: column-reverse;}
+    .sidecontainer{margin-bottom:1.5em}
+    .mediaboxPlayer iframe{width:100%!important}
 }
 
 
@@ -726,7 +726,7 @@ height: 50vh;
     animation-iteration-count: infinite;
 }
 
-.sidecontainer{margin-left:25px;width:20%}
+@media screen and (min-width:768px){.sidecontainer{margin-left:25px;width:20%}}
 
 .line-1{animation-delay: 15ms;animation-name: bounceHigh;height: 99%;}
 .line-2{animation-delay: 30ms;animation-name: bounceLow;height: 129%;}
