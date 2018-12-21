@@ -312,9 +312,10 @@ will-change:background-position;
 }
 
 /*IntersectionObserver Animationen*/
-#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
+#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .in-view.sideanimation{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
+.in-view.grid-item{animation:reveal .3 ease-out forwards}
 
 
 @keyframes treppe{
@@ -325,6 +326,10 @@ will-change:background-position;
     from{transform: translate3d(-90px,0,0);opacity:0;}
     to{transform:none;opacity:1;}
     
+}
+@keyframes reveal{
+    from{transform: translateY(100px); opacity: 0}
+    to{transform:translateY(0);opacity:1}
 }
 
 
@@ -2036,7 +2041,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item');
 
 //]]>
 </script>
@@ -2059,7 +2064,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 
 function initObserver() {
   var observer = new IntersectionObserver(callback);
-  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
+  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item');
 
   for (var i in items) {
     if (!items.hasOwnProperty(i)) {
