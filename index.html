@@ -2106,7 +2106,7 @@ if (window.IntersectionObserver) {
     
     function initObserver() {
       var observer = new IntersectionObserver(callback);
-      var items = document.querySelectorAll('.grid-item');
+      var items = document.querySelectorAll('.grid-item img');
     
       for (var i in items) {
         if (!items.hasOwnProperty(i)) {
