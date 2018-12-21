@@ -2100,10 +2100,7 @@ if (window.IntersectionObserver) {
       for (var i in entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view-grid');}
-          else {
-            entry.target.classList.remove('in-view-grid');
-          }
+            entry.target.classList.add('in-view-grid');observer.unobserve(entry.target);}
         });
       }
     }
