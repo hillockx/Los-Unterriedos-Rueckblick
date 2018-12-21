@@ -314,8 +314,8 @@ will-change:background-position;
 /*IntersectionObserver Animationen*/
 #cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.in-view.sideanimation{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.in-view.grid-item{animation:reveal .3 ease-out forwards}
+.sideanimation.in-view{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
+.grid-item.in-view{animation:reveal .3 ease-out forwards}
 
 
 @keyframes treppe{
@@ -2054,7 +2054,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
       if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
       }
-      
+      observer.unobserve(entry.target);
       else {
         entry.target.classList.remove('in-view');
       }
