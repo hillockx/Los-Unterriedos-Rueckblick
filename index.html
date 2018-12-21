@@ -2140,14 +2140,14 @@ var $carousel = $('.main-carousel').flickity({
 
 <script type="text/javascript">
 //<![CDATA[
-var $grid = $('.grid').imagesLoaded( function() {
-  // init Masonry after all images have loaded
-  $grid.masonry({
+var $grid = $('.grid').masonry({
   columnWidth: '.grid-sizer',
   gutter:'.gutter-sizer',
   itemSelector: '.grid-item',
   percentPosition: true
   });
+  $grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
 });
 
 //]]>
