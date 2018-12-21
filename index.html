@@ -2034,7 +2034,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>$.cloudinary.config({ cloud_name: 'unterrieden', secure: true});
 </script>
 <script type="text/javascript">$.cloudinary.responsive()</script>
-
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script src="https://se0cc33489ad718e6.jimcontent.com/download/version/1535898737/module/8539020114/name/intersection-observer.js"></script>
 
@@ -2046,7 +2046,20 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 
 //]]>
 </script>
-
+<script type="text/javascript">
+    //<![CDATA[
+    var $grid = $('.grid').masonry({
+      columnWidth: '.grid-sizer',
+      gutter:'.gutter-sizer',
+      itemSelector: '.grid-item',
+      percentPosition: true
+      });
+      $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+    
+    //]]>
+    </script>
 <script type="text/javascript">
 //<![CDATA[
     function callback(entries) {
@@ -2115,8 +2128,6 @@ if (window.IntersectionObserver) {
     </script>
 
 
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
@@ -2137,21 +2148,6 @@ var $carousel = $('.main-carousel').flickity({
 </script>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-<script type="text/javascript">
-//<![CDATA[
-var $grid = $('.grid').masonry({
-  columnWidth: '.grid-sizer',
-  gutter:'.gutter-sizer',
-  itemSelector: '.grid-item',
-  percentPosition: true
-  });
-  $grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
-
-//]]>
-</script>
 
 
 
