@@ -2025,7 +2025,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- JAVASCRIPT -->
 
-<script src="/lazysizes.min.js" async=""></script>
+<script src="/lazysizes.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/jquery.fancybox.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -2047,14 +2047,13 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 </script>
 <script type="text/javascript">
     //<![CDATA[
-    var $grid = $('.grid').masonry({
+    var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
       columnWidth: '.grid-sizer',
       gutter:'.gutter-sizer',
       itemSelector: '.grid-item',
       percentPosition: true
       });
-      $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
     });
     
     //]]>
