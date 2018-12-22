@@ -314,8 +314,9 @@ will-change:background-position;
 /*IntersectionObserver Animationen*/
 #cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0}
 @media screen and (min-width:768px){
-    .grid-item img{opacity:0.001;transition:opacity .2s ease}
-    .grid-item img.lazyloaded,.grid-item img.lazyloading,.grid-item img.lazyload{transition:opacity .2s ease}
+    .grid-item img.lazyload,.grid-item img.lazyloading{opacity:0.001;}
+    .grid-item img.lazyloaded{opacity:1}
+    .grid-item img,.grid-item img.lazyloaded,.grid-item img.lazyloading,.grid-item img.lazyload{transition:opacity .2s ease}
     .in-view-grid{animation:reveal .4s ease-out forwards}
 }
 
@@ -2047,12 +2048,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item');
 
 //]]>
 </script>
 <script type="text/javascript">
-const images = document.querySelectorAll('.grid-item img');
+const images = document.querySelectorAll('.grid-item');
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
