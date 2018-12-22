@@ -312,26 +312,21 @@ will-change:background-position;
 }
 
 /*IntersectionObserver Animationen*/
-#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
+#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .sideanimation.in-view{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.grid-item img{opacity:0}
-.in-view-grid{animation:reveal .3s ease-out .1s forwards}
 
 
 @keyframes treppe{
-    from{transform: translate3d(0,75px,0);opacity:0;}
-    to{transform:none;opacity:1;}
+    from{transform: translateY(75px);opacity:0;}
+    to{transform:translateY(0);opacity:1;}
 }
 @keyframes side{
-    from{transform: translate3d(-90px,0,0);opacity:0;}
-    to{transform:none;opacity:1;}
+    from{transform: translateX(-90px);opacity:0;}
+    to{transform:translateY(none);opacity:1;}
     
 }
-@keyframes reveal{
-    from{transform: translateY(100px);opacity:0}
-    to{transform:translateY(0);opacity:1}
-}
+
 
 
 /*ATTRIBUTION*/
@@ -902,7 +897,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="edge" style="height: 100vh; display: flex;">
     <div class="inhalt">
-        <p id="daswar" class="in-view">
+        <p id="daswar">
             Das war...
         </p>
 
@@ -2063,8 +2058,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 <script type="text/javascript">
 //<![CDATA[
 const config = {
-  rootMargin: '50px 20px 75px 30px',
-  threshold: [0, 0.25, 0.75, 1]
+  threshold: [0.1]
 };
     function callback(entries) {
   for (var i in entries) {
@@ -2080,7 +2074,7 @@ const config = {
 
 function initObserver() {
   var observer = new IntersectionObserver(callback);
-  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung');
+  var items = document.querySelectorAll('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img');
 
   for (var i in items) {
     if (!items.hasOwnProperty(i)) {
@@ -2099,37 +2093,6 @@ if (window.IntersectionObserver) {
 //]]>
 </script>
 
-<script type="text/javascript">
-    //<![CDATA[
-        function callback(entries) {
-      for (var i in entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view-grid');observer.unobserve(entry.target);}
-        });
-      }
-    }
-    
-    function initObserver() {
-      var observer = new IntersectionObserver(callback);
-      var items = document.querySelectorAll('.grid-item img');
-    
-      for (var i in items) {
-        if (!items.hasOwnProperty(i)) {
-          continue;
-        }
-    
-        observer.observe(items[i]);
-      }
-    }
-    
-    if (window.IntersectionObserver) {
-      initObserver();
-    } else {
-      console.log("IntersectionObserver not supported.");
-    }
-    //]]>
-    </script>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
