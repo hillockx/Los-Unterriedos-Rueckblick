@@ -313,7 +313,7 @@ will-change:background-position;
 
 /*IntersectionObserver Animationen*/
 #cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img{opacity:0;}
-.in-view-grid{animation:treppe .2s ease-out forwards}
+.in-view-grid{animation:treppe .2s ease-out}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .sideanimation.in-view{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 
@@ -2038,7 +2038,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //<![CDATA[
 var io = new IntersectionObserver(callback);
 io.POLL_INTERVAL = 100; // Time in milliseconds.
-io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item');
+io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img');
 
 //]]>
 </script>
@@ -2051,9 +2051,9 @@ const config = {
   for (var i in entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('in-view-grid');}
+        entry.target.classList.add('in-view');}
       else {
-        entry.target.classList.remove('in-view-grid');
+        entry.target.classList.remove('in-view');
       }
     });
   }
@@ -2102,9 +2102,9 @@ if (window.IntersectionObserver) {
       for (var i in entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');}
+            entry.target.classList.add('in-view-grid');}
           else {
-            entry.target.classList.remove('in-view');
+            entry.target.classList.remove('in-view-grid');
           }
         });
       }
