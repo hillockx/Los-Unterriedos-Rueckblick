@@ -312,10 +312,10 @@ will-change:background-position;
 }
 
 /*IntersectionObserver Animationen*/
-#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0;}
+#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img{opacity:0;}
+.in-view-grid{animation:treppe .2s ease-out forwards}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .sideanimation.in-view{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
-.grid-item img{opacity:0}
 
 
 @keyframes treppe{
@@ -324,7 +324,7 @@ will-change:background-position;
 }
 @keyframes side{
     from{transform: translateX(-90px);opacity:0;}
-    to{transform:translateY(none);opacity:1;}
+    to{transform:translateY(0);opacity:1;}
     
 }
 
@@ -2051,9 +2051,9 @@ const config = {
   for (var i in entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');}
+        entry.target.classList.add('in-view-grid');}
       else {
-        entry.target.classList.remove('in-view');
+        entry.target.classList.remove('in-view-grid');
       }
     });
   }
