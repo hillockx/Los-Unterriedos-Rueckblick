@@ -2044,16 +2044,13 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
 </script>
 <script type="text/javascript">
     //<![CDATA[
-    const config = {
-      rootMargin = '500px 0 0 0'
-    };
         function callback(entries) {
       for (var i in entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view-grid');}
+            entry.target.classList.add('in-view');}
           else {
-            entry.target.classList.remove('in-view-grid');
+            entry.target.classList.remove('in-view');
           }
         });
       }
@@ -2078,7 +2075,7 @@ io.observe('#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobile
       console.log("IntersectionObserver not supported.");
     }
     //]]>
-    </script>
+</script>
 
 <script type="text/javascript">
 //<![CDATA[
