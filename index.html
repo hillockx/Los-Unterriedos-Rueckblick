@@ -312,7 +312,7 @@ will-change:background-position;
 }
 
 /*IntersectionObserver Animationen*/
-#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img:not(.lazyloading,.lazyload){opacity:0;}
+#cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung,.grid-item img.lazyload{opacity:0;}
 .in-view{animation:treppe .3s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .sideanimation.in-view{animation:side .6s cubic-bezier(.01,.11,.24,1.13) .4s forwards;}
 .in-view-grid{animation:reveal .3s ease-out .1s forwards}
@@ -2107,7 +2107,7 @@ if (window.IntersectionObserver) {
     
     function initObserver() {
       var observer = new IntersectionObserver(callback);
-      var items = document.querySelectorAll('.grid-item img');
+      var items = document.querySelectorAll('.grid-item img.lazyloading,.grid-item img.lazyloaded');
     
       for (var i in items) {
         if (!items.hasOwnProperty(i)) {
