@@ -183,7 +183,14 @@ text-transform: uppercase;
     .fullscreenWrapper2{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg)}
 }
 #fullscreenTeaser1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg);}
-#daybox2{background-color: RGBA(133, 197, 224, .9)}
+
+@media screen and (min-width:768px){#daybox2{background-color: RGBA(133, 197, 224, .9)}
+#daybox1{background-color: RGBA(232, 236, 87, .9)}}
+
+@supports (-webkit-backdrop-filter:blur(20px)){
+    #daybox1{background-color: RGBA(232, 236, 87, .8)}
+    #daybox2{background-color: RGBA(133, 197, 224, .8)}
+}
 .fullscreenTeaser{padding:0!important;background-size:cover!important;margin-top:275px}
 
 #text:not(:target){opacity:0;visibility:hidden;transition:opacity .6s, visibility .6s;}
@@ -1717,7 +1724,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     
 <div class="mobileFlex" style="height: 100vh; display: flex;">
-    <div class="daybox" style="background-color: RGBA(232, 236, 87, .9);">
+    <div class="daybox" id="daybox1">
         <div id="staatseroeffnung">
             <div class="dayboxTrenner"></div>
             <p class="mobileKapitelueberschrift mobileKapitelueberschriftTeaser" style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
