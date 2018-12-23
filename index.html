@@ -690,9 +690,11 @@ height: 50vh;
 @media screen and (min-width:768) and (max-width:1444px){.daybox{width:40vw!important}}
 
 @media screen and (max-width:767px){
-    .mobileFlex{display:inherit}
-    .daybox{box-sizing:border-box;padding:30px;height:100%;-webkit-backdrop-filter:blur(20px);}
+    .mobileFlex{display:inherit!important}
+    .mobileFlex::after{display: block;position: absolute;background-image: linear-gradient( hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.738) 19%, hsla(0, 0%, 0%, 0.541) 34%, hsla(0, 0%, 0%, 0.382) 47%, hsla(0, 0%, 0%, 0.278) 56.5%, hsla(0, 0%, 0%, 0.194) 65%, hsla(0, 0%, 0%, 0.126) 73%, hsla(0, 0%, 0%, 0.075) 80.2%, hsla(0, 0%, 0%, 0.042) 86.1%, hsla(0, 0%, 0%, 0.021) 91%, hsla(0, 0%, 0%, 0.008) 95.2%, hsla(0, 0%, 0%, 0.002) 98.2%, hsla(0, 0%, 0%, 0) 100% );margin-top: -200px;height:200px;width: 100%;content: '';transform: scaleY(-1);}
+    .daybox{box-sizing:border-box;padding:30px;height:100%;-webkit-backdrop-filter:blur(20px);position:relative}
     .dayboxPhotoCaption{display:none}
+    #staatseroeffnung{bottom: 0;position: absolute;}
 }
 
 
