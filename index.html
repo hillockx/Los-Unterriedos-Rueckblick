@@ -692,12 +692,17 @@ height: 50vh;
 @media screen and (max-width:767px){
     .mobileFlex{display:inherit!important}
     .mobileFlex::after{display: block;position: absolute;background-image: linear-gradient( hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.738) 19%, hsla(0, 0%, 0%, 0.541) 34%, hsla(0, 0%, 0%, 0.382) 47%, hsla(0, 0%, 0%, 0.278) 56.5%, hsla(0, 0%, 0%, 0.194) 65%, hsla(0, 0%, 0%, 0.126) 73%, hsla(0, 0%, 0%, 0.075) 80.2%, hsla(0, 0%, 0%, 0.042) 86.1%, hsla(0, 0%, 0%, 0.021) 91%, hsla(0, 0%, 0%, 0.008) 95.2%, hsla(0, 0%, 0%, 0.002) 98.2%, hsla(0, 0%, 0%, 0) 100% );margin-top: -200px;height:200px;width: 100%;content: '';transform: scaleY(-1);}
-    .daybox{box-sizing:border-box;padding:30px;height:100%;-webkit-backdrop-filter:blur(20px);position:relative;background-color:none}
+    .daybox{box-sizing:border-box;padding:30px;height:100%;-webkit-backdrop-filter:blur(20px);position:relative;background-color:unset!important}
     .dayboxPhotoCaption,.dayboxCaption{display:none}
     #staatseroeffnung{bottom: 0;position: absolute;z-index:2;margin-bottom: 1em}
     .mobileKapitelueberschriftTeaser{color:white!important}
-    .mobileDatum{color:white!important}
+    .mobileDatum{color:white;font:.9em Roboto;font-weight:300;}
+    .dayboxTrenner{width:25px;border:2px solid white;margin-bottom: .5em}
 }
+
+@media screen and (min-width:768px){.dayboxTrenner{width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em}}
+.mobileDatum{margin-top: .3em}
+@media screen and (min-width:768px){.mobileDatum{font: 1em Roboto Mono; color: rgba(0,0,0,.9); letter-spacing: -1px; font-weight: bold;}}
 
 
 
@@ -1713,12 +1718,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="mobileFlex" style="height: 100vh; display: flex;">
     <div class="daybox" style="background-color: RGBA(232, 236, 87, .9);">
         <div id="staatseroeffnung">
-            <div style="width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em"></div>
+            <div class="dayboxTrenner"></div>
             <p class="mobileKapitelueberschrift mobileKapitelueberschriftTeaser" style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
                 Staatseröffnung
             </p>
 
-            <p class="mobileDatum" style="font: 1em Roboto Mono; color: rgba(0,0,0,.9); letter-spacing: -1px; font-weight: bold; margin-top: .3em;">
+            <p class="mobileDatum">
                 Mittwoch •  18. Juli 2018
             </p>
             <p class="dayboxCaption" style="color:rgba(0,0,0,.9)">Nach eineinhalb Jahren Vorbereitungszeit ist nun der Moment gekommen: Frau Fuchs übergibt die Leitung an Präsident Frohnmayer und eröffnet den Staat Los Unterriedos.</p>
@@ -1979,12 +1984,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="mobileFlex" style="height: 100vh; display: flex;flex-direction: row-reverse">
                 <div class="daybox" id="daybox2">
                     <div id="staatseroeffnung">
-                        <div style="width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em"></div>
+                        <div class="dayboxTrenner"></div>
                         <p class="mobileKapitelueberschrift" style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
                             Tag zwei
                         </p>
             
-                        <p style="font: 1em Roboto Mono; color: rgba(0,0,0,.9); letter-spacing: -1px; font-weight: bold; margin-top: .3em;">
+                        <p class="mobileDatum">
                             Donnerstag •  19. Juli 2018
                         </p>
                         <p class="dayboxCaption" style="color:rgba(0,0,0,.9)">Nach eineinhalb Jahren Vorbereitungszeit ist nun der Moment gekommen: Frau Fuchs übergibt die Leitung an Präsident Frohnmayer und eröffnet den Staat Los Unterriedos.</p>
