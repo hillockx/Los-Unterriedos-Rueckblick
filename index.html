@@ -179,10 +179,11 @@ text-transform: uppercase;
         height: 100vh;
         z-index:9999;
 }
-    #1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg);}
-    #2{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg)}
+    .fullscreenWrapper1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg);}
+    .fullscreenWrapper2{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg)}
 }
 #fullscreenTeaser1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg);padding: 0!important;background-size: cover;}
+#daybox2{background-color: RGBA(133, 197, 224, .9)}
 
 #text:not(:target){opacity:0;visibility:hidden;transition:opacity .6s, visibility .6s;}
 #text:target{opacity:1;visibility:visible;transition:opacity .6s, visibility .6s;}
@@ -1699,7 +1700,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div id="cc-m-8599043214" class="j-module n j-text ">
         <a href="#1" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544211995/maximize.svg"/></div></a>
-        <div id="1" class="fullscreenWrapper">
+        <div id="1" class="fullscreenWrapper fullscreenWrapper1">
             <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
         </div>
     
@@ -1966,11 +1967,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544211995/maximize.svg"/>
             </div>
         </a>
-        <div id="2" class="fullscreenWrapper">
+        <div id="2" class="fullscreenWrapper fullscreenWrapper2">
             <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
         </div>
         <div class="mobileFlex" style="height: 100vh; display: flex;">
-                <div class="daybox" style="background-color: RGBA(232, 236, 87, .9);">
+                <div class="daybox" id="daybox2">
                     <div id="staatseroeffnung">
                         <div style="width:40px;border-top:5px rgba(0,0,0,.9) solid;margin-bottom:1em"></div>
                         <p class="mobileKapitelueberschrift" style="font: 3.5em Cabin;font-weight:bold ;color: rgba(0,0,0,.9); line-height: 1;">
