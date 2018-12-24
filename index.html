@@ -180,9 +180,8 @@ text-transform: uppercase;
         z-index:9999;
 }
     .fullscreenWrapper1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg);}
-    .fullscreenWrapper2{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg)}
 }
-#fullscreenTeaser1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg);}
+
 
 @media screen and (min-width:768px){#daybox2{background-color: RGBA(170,0,47,.9)}
 #daybox1{background-color: RGBA(232, 236, 87, .9)}}
@@ -877,7 +876,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="body cc-page j-m-gallery-styles j-m-video-styles j-m-hr-styles j-m-header-styles j-m-text-styles j-m-emotionheader-styles j-m-htmlCode-styles j-m-rss-styles j-m-form-styles-disabled j-m-table-styles j-m-textWithImage-styles j-m-downloadDocument-styles j-m-imageSubtitle-styles j-m-flickr-styles j-m-googlemaps-styles j-m-blogSelection-styles-disabled j-m-comment-styles-disabled j-m-jimdo-styles j-m-profile-styles j-m-guestbook-styles j-m-promotion-styles j-m-twitter-styles j-m-hgrid-styles j-m-shoppingcart-styles j-m-catalog-styles j-m-product-styles-disabled j-m-facebook-styles j-m-sharebuttons-styles j-m-formnew-styles-disabled j-m-callToAction-styles j-m-turbo-styles j-m-spacing-styles j-m-googleplus-styles j-m-dummy-styles j-m-search-styles j-m-booking-styles j-footer-styles cc-pagemode-default cc-content-parent" id="page-1648354514">
-
+    <div class="lazyload" data-link="/jquery.fancybox.css"></div>
 <div id="cc-inner" class="cc-content-parent">
   <input type="checkbox" id="jtpl-navigation__checkbox" class="jtpl-navigation__checkbox"/><!-- _main.sass --><div class="jtpl-main cc-content-parent">
 
@@ -1981,13 +1980,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </div>
 
-<div id="fullscreenTeaser1" class="fullscreenTeaser">
+<div id="fullscreenTeaser1" class="fullscreenTeaser" data-bg="https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg">
         <a href="#2" class="fullscreenLink">
             <div class="fullscreenIconBackground">
                 <img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544211995/maximize.svg"/>
             </div>
         </a>
-        <div id="2" class="fullscreenWrapper fullscreenWrapper2">
+        <div id="2" class="fullscreenWrapper fullscreenWrapper2" data-bg="https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg">
             <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
         </div>
         <div class="mobileFlex" style="height: 100vh; display: flex;flex-direction: row-reverse">
@@ -2059,7 +2058,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="grid-item">
-                <a data-fancybox="gallery4" data-caption="Eine Trauung im Standesamt" href="https://res.cloudinary.com/unterrieden/image/upload/v1545571337/Tag%202/Bild_8_Standesamt.jpg"><img class="lazyload" data-sizes="auto" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178370/module/8602913014/name/wideyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/f_auto,c_scale,w_{width}/v1545571337/Tag%202/Bild_8_Standesamt.jpg"/><figcaption class="melange lazyloadcaption">Eine Trauung im Standesamt<p class="fancycaptiontrenner">|</p><div class="attribution"><img class="attributionIcon fancyboxOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText">Lilly Brieden</p></div></figcaption></a>
+                <a data-fancybox="gallery4" data-caption="Eine Trauung im Standesamt" href="https://res.cloudinary.com/unterrieden/image/upload/v1545571337/Tag%202/Bild_8_Standesamt.jpg"><img class="lazyload" data-sizes="auto" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1543178364/module/8602912914/name/hochyellow.svg" alt="" data-src="https://res.cloudinary.com/unterrieden/image/upload/f_auto,c_scale,w_{width}/v1545571337/Tag%202/Bild_8_Standesamt.jpg"/><figcaption class="melange lazyloadcaption">Eine Trauung im Standesamt<p class="fancycaptiontrenner">|</p><div class="attribution"><img class="attributionIcon fancyboxOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg" /><p class="attributionText">Lilly Brieden</p></div></figcaption></a>
             </div>
     </div>
 </div>
@@ -2151,9 +2150,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     window.lazySizesConfig.rias.widths = [400, 450, 500, 600, 700, 800, 900, 1000, 1080, 1100, 1200, 1400, 1600, 1800, 1900, 2048, 2400];</script>
     <script>window.lazySizesConfig = window.lazySizesConfig || {};
     lazySizesConfig.expand = 760</script>
+<script src="/ls.unveilhook.min.js"></script>
 <script src="/lazysizes.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/jquery.fancybox.css">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
