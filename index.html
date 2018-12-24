@@ -182,7 +182,7 @@ text-transform: uppercase;
     .fullscreenWrapper1{background-image: url(https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg);}
 }
 .fullscreenTeaser{background-color:#e6e4e4}
-#fullscreenTeaser1.lazyloaded,.fullscreenWrapper1.lazyloaded{background-image:url(https://res.cloudinary.com/unterrieden/image/upload/f_auto/v1545247388/14310464_7106_2.jpg)}
+#fullscreenTeaser1{background-image:url(https://res.cloudinary.com/unterrieden/image/upload/v1543757867/14310464_7106_1.jpg)}
 #fullscreenTeaser2.lazyloaded,.fullscreenWrapper2.lazyloaded{background-image:url(https://res.cloudinary.com/unterrieden/image/upload/v1545571222/Tag%202/IMG_1880.jpg)}
 
 @media screen and (max-width:768px){#fullscreenTeaser1{background-position:center}}
@@ -329,9 +329,9 @@ will-change:background-position;
 /*IntersectionObserver Animationen*/
 #cc-matrix-2225526514,#cc-m-8534735814,#cc-matrix-2225526614,.mobileCarouselAnimation,#carusselAnimation,#cc-m-8538367014,.sideanimation,#cc-m-8538778814,.introductionText-animate,#cc-m-8572238014,#staatseroeffnung{opacity:0}
 @media screen and (min-width:768px){
-    .grid-item,.grid-item img.lazyload,.grid-item img.lazyloading{opacity:0.001;}
-    .grid-item img.lazyloaded{opacity:1}
-    .grid-item img,.grid-item img.lazyloaded,.grid-item img.lazyloading,.grid-item img.lazyload{transition:opacity .25s ease-out}
+    .grid-item,.grid-item img.lazyload,.grid-item img.lazyloading,.fullscreenTeaser.lazyload,.fullscreenTeaser.lazyloading{opacity:0.001;}
+    .grid-item img.lazyloaded,.fullscreenTeaser.lazyloaded{opacity:1}
+    .grid-item img,.grid-item img.lazyloaded,.grid-item img.lazyloading,.grid-item img.lazyload,.fullscreenTeaser.lazyload,.fullscreenTeaser.lazyloading,.fullscreenTeaser.lazyloaded{transition:opacity .25s ease-out}
     .in-view-grid{animation:reveal .4s ease-out .2s forwards}
 }
 
@@ -1720,7 +1720,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 </div>
-<div id="fullscreenTeaser1" class="lazyload j-module n j-text fullscreenTeaser" data-expand="800">
+<div id="fullscreenTeaser1" class="j-module n j-text fullscreenTeaser">
         <a href="#1" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544211995/maximize.svg"/></div></a>
         <div id="1" class="fullscreenWrapper fullscreenWrapper1">
             <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
