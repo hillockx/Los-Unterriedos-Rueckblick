@@ -159,12 +159,12 @@ text-transform: uppercase;
 
 }
 
-#videowrapper{
+.videowrapper{
         z-index:2;
         height: 100vh;
         width:100vw;
 }
-#videowrapper iframe{position: relative;
+.videowrapper iframe{position: relative;
         top: 0;
         left: 0;
         width: 100%;
@@ -967,7 +967,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
 
             <div id="play">
-                <div id="videowrapper">
+                <div class="videowrapper">
                     <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/4xayZ7ESIik?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 </div>
             </div>
@@ -1437,9 +1437,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div id="cc-matrix-2226589314"></div>    </div>
             <div class="cc-m-hgrid-separator" data-display="cms-only"><div></div></div>
         <div class="cc-m-hgrid-column" style="width: 31.99%;">
-        <div id="cc-matrix-2226589514"><div id="cc-m-8567977614" class="j-module n j-text "><div style="margin-top: 15em;">
-</div>
-
+        <div id="cc-matrix-2226589514"><div id="cc-m-8567977614" class="j-module n j-text ">
 
 <div class="introductionText-animate">
     <p>
@@ -1697,7 +1695,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Mittwoch •  18. Juli 2018
             </p>
             <p class="dayboxCaption" style="color:rgba(0,0,0,.9)">Nach eineinhalb Jahren Vorbereitungszeit ist nun der Moment gekommen: Frau Fuchs übergibt die Leitung an Präsident Frohnmayer und eröffnet den Staat Los Unterriedos.</p>
-            
+            <div id="mobilePlayer">
+                <p class="playerButtonMargin">
+                    <a class="playerButton" href="https://youtu.be/4xayZ7ESIik" target="_top">Video abspielen</a>
+                </p>
+            </div>
+    
+            <div id="desktopPlayer">
+                <p class="playerButtonMargin">
+                    <a class="playerButton" href="#play">Video abspielen</a>
+                </p>
+    
+                <div id="play">
+                    <div class="videowrapper">
+                        <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/4xayZ7ESIik?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="dayboxPhotoCaption"><img class="attributionIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg"><p class="attributionText" style="margin-left:5px">SZBZ/Rebekka Groß</p></div></div></div>
     
