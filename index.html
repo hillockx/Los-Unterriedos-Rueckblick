@@ -195,11 +195,12 @@ background-repeat: no-repeat;}
 @media screen and (max-width:768px){#fullscreenTeaser1{background-position:center}}
 
 @media screen and (min-width:768px){#daybox2{background-color: RGBA(170,0,47,.9)}
-#daybox1{background-color: RGBA(232, 236, 87, .9)}}
+#daybox1{background-color: RGBA(232, 236, 87, .9)}#daybox3{background-color:RGBA(5, 29, 103,.9)}}
 
 @supports (-webkit-backdrop-filter:blur(20px)){
     #daybox1{background-color: RGBA(232, 236, 87, .8)}
     #daybox2{background-color: RGBA(170,0,47, .8)}
+    #daybox3{background-color:RGBA(5, 29, 103,.8)}
 }
 .fullscreenTeaser{padding:0!important;background-size:cover!important;margin-top:275px}
 
@@ -2073,6 +2074,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
 </div>
+
+<div id="fullscreenTeaser2" class="lazyload fullscreenTeaser" data-expand="1600">
+    <a href="#2" class="fullscreenLink">
+        <div class="fullscreenIconBackground">
+            <img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544211995/maximize.svg"/>
+        </div>
+    </a>
+
+    <div id="2" class="lazyload fullscreenWrapper fullscreenWrapper2">
+        <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
+    </div>
+    <div id="play3" class="player">
+        <div class="videowrapper">
+            <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/mg9TTCGtPZ4?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+    </div>
+    <div class="mobileFlex" style="height: 100vh; display: flex;flex-direction: row-reverse">
+            <div class="daybox" id="daybox3">
+                <div id="staatseroeffnung">
+                    <div class="dayboxTrenner"></div>
+                    <p class="mobileKapitelueberschrift mobileKapitelueberschriftTeaser" style="font: 3.5em Cabin;font-weight:bold;line-height: 1;">
+                        Tag drei
+                    </p>
+        
+                    <p class="mobileDatum">
+                        Freitag •  20. Juli 2018
+                    </p>
+                    <div class="desktopPlayer">
+                        <p class="playerButtonMargin">
+                            <a class="playerButton playerButtonWhite" style="color:white!important" href="#play3">Video abspielen</a>
+                        </p>
+            
+                    </div>
+                </div>
+                <div class="dayboxPhotoCaption"><img class="attributionIcon whiteOne" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg"><p class="attributionText white" style="margin-left:5px">Lilly Brieden</p></div></div>
+            
+            </div>
+   </div>
+</div>
+
+
+
+
 
 </div></div>
 
