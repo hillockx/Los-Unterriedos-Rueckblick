@@ -100,6 +100,7 @@ font-weight: bold;
 text-transform: uppercase;
   animation: pulse 2s infinite;
 }
+.playerButtonBlack{border:2px solid black;animation:unset!important}
 @keyframes pulse {
   0% {
    
@@ -116,7 +117,6 @@ text-transform: uppercase;
 }
 .playerButtonMargin{margin-top:2.5em;}
 .playerButton::before{
-    background: url(https://res.cloudinary.com/unterrieden/image/upload/v1545170300/untitled_1.svg);
     display: inline-block;
     vertical-align: middle;
     margin-right: .2em;
@@ -128,13 +128,16 @@ text-transform: uppercase;
     background-repeat: no-repeat;
     transition: transform .3s ease-in;
 }
+.playerButton.playerButtonYellow::before{background: url(https://res.cloudinary.com/unterrieden/image/upload/v1545170300/untitled_1.svg);}
+.playerButton.playerButtonBlack::before{background: url(https://res.cloudinary.com/unterrieden/image/upload/v1546179919/play-arrow.svg);}
+.playerButton.playerButtonWhite::before{background: url(https://res.cloudinary.com/unterrieden/image/upload/v1546179911/play-arrow_1.svg);}
 @media screen and (min-width:768px){.playerButton:hover{color:transparent!important;}
 .playerButton:hover::before{
     transform:translateX(250%);transition:transform .4s ease-out;
 }}
 
 @media screen and (min-width:768px){
-#play{
+#play,.player{
         position: absolute;
         top: 0;
         left: 0;
@@ -146,13 +149,13 @@ text-transform: uppercase;
         align-items: center;
         z-index:9999;
 }
-#play:not(:target) {
+#play:not(:target),.player:not(:target){
         opacity: 0;
         visibility: hidden;
         transition: opacity 1s, visibility 1s;
 }
 
-#play:target {
+#play:target,.player:target {
         opacity: 1;
         visibility: visible;
         transition: opacity 1s, visibility 1s;
@@ -957,7 +960,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div id="mobilePlayer">
             <p class="playerButtonMargin">
-                <a class="playerButton" href="https://youtu.be/4xayZ7ESIik" target="_top">Video abspielen</a>
+                <a class="playerButton playerButtonYellow" href="https://youtu.be/4xayZ7ESIik" target="_top">Video abspielen</a>
             </p>
         </div>
 
@@ -1703,10 +1706,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
             <div id="desktopPlayer">
                 <p class="playerButtonMargin">
-                    <a class="playerButton" href="#play2">Video abspielen</a>
+                    <a class="playerButton playerButtonBlack" style="color:black" href="#play2">Video abspielen</a>
                 </p>
     
-                <div id="play2">
+                <div id="play2" class="player">
                     <div class="videowrapper">
                         <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/4xayZ7ESIik?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
