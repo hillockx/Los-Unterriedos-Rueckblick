@@ -88,8 +88,8 @@ onloadCSS(loadCss('https://assets.jimstatic.com/web.css.013a174ba92c33abd156773f
 
 
 /*PLAYER BUTTON*/
-@media screen and (max-width:767px){#desktopPlayer{display:none;}}
-@media screen and (min-width:768px){#mobilePlayer{display:none;}}
+@media screen and (max-width:767px){.desktopPlayer{display:none;}}
+@media screen and (min-width:768px){.mobilePlayer{display:none;}}
 .playerButton{
 border-radius: 50px;
 padding: 15px;
@@ -962,13 +962,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span style="color: #e6eb4c;">Gymnasium Unterrieden</span> <span style="color: #000000; background-color: #e6eb4c; padding: 0px 6px;">18. – 21. Juli 2018</span>
         </p>
 
-        <div id="mobilePlayer">
+        <div class="mobilePlayer">
             <p class="playerButtonMargin">
                 <a class="playerButton playerButtonYellow" href="https://youtu.be/4xayZ7ESIik" target="_top">Video abspielen</a>
             </p>
         </div>
 
-        <div id="desktopPlayer">
+        <div class="desktopPlayer">
             <p class="playerButtonMargin">
                 <a class="playerButton playerButtonYellow" href="#play">Video abspielen</a>
             </p>
@@ -1341,7 +1341,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div id="cc-matrix-2226006214"></div>    </div>
             <div class="cc-m-hgrid-separator" data-display="cms-only"><div></div></div>
         <div class="cc-m-hgrid-column" style="width: 31.99%;">
-        <div id="cc-matrix-2226006414"><div id="cc-m-8536962114" class="j-module n j-text ">
+        <div id="cc-matrix-2226006414"><div id="cc-m-8536962114" class="j-module n j-text "><div style="margin-top: 15em;"></div>
 <div class="introductionText-animate">
     <p>
         <span id="kapitel2" class="kapitel">Kapitel 2</span>
@@ -1444,7 +1444,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div id="cc-matrix-2226589314"></div>    </div>
             <div class="cc-m-hgrid-separator" data-display="cms-only"><div></div></div>
         <div class="cc-m-hgrid-column" style="width: 31.99%;">
-        <div id="cc-matrix-2226589514"><div id="cc-m-8567977614" class="j-module n j-text ">
+        <div id="cc-matrix-2226589514"><div id="cc-m-8567977614" class="j-module n j-text "><div style="margin-top: 15em;"></div>
 
 <div class="introductionText-animate">
     <p>
@@ -1657,7 +1657,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div id="cc-matrix-2246640714"><img style="float:right" class="arrowThree mobileArrowThreeReplace" src="https://se0cc33489ad718e6.jimcontent.com/download/version/1536003800/module/8538635414/name/squiggle-arrow-big.svg"/></div>    </div>
             <div class="cc-m-hgrid-separator" data-display="cms-only"><div></div></div>
         <div class="cc-m-hgrid-column" style="width: 31.99%;">
-        <div id="cc-matrix-2246640914"><div id="cc-m-8594039514" class="j-module n j-text "><div style="margin-top: 15em;">
+        <div id="cc-matrix-2246640914"><div id="cc-m-8594039514" class="j-module n j-text ">
 </div>
 
 <div class="introductionText-animate">
@@ -1689,6 +1689,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div id="1" class="fullscreenWrapper fullscreenWrapper1">
             <a href="#0" class="fullscreenLink"><div class="fullscreenIconBackground"><img class="fullscreenIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544214740/minimize.svg"/></div></a>
         </div>
+        <div id="play2" class="player">
+            <div class="videowrapper">
+                <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/4xayZ7ESIik?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </div>
     
 <div class="mobileFlex" style="height: 100vh; display: flex;">
     <div class="daybox" id="daybox1">
@@ -1702,22 +1707,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Mittwoch •  18. Juli 2018
             </p>
             <p class="dayboxCaption" style="color:rgba(0,0,0,.9)">Nach eineinhalb Jahren Vorbereitungszeit ist nun der Moment gekommen: Frau Fuchs übergibt die Leitung an Präsident Frohnmayer und eröffnet den Staat Los Unterriedos.</p>
-            <div id="mobilePlayer">
+            <div class="mobilePlayer">
                 <p class="playerButtonMargin">
                     <a class="playerButton" href="https://youtu.be/4xayZ7ESIik" target="_top">Video abspielen</a>
                 </p>
             </div>
     
-            <div id="desktopPlayer">
+            <div class="desktopPlayer">
                 <p class="playerButtonMargin">
                     <a class="playerButton playerButtonBlack" style="color:black!important" href="#play2">Video abspielen</a>
                 </p>
     
-                <div id="play2" class="player">
-                    <div class="videowrapper">
-                        <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/4xayZ7ESIik?color=white" width="560" height="349" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="dayboxPhotoCaption"><img class="attributionIcon" src="https://res.cloudinary.com/unterrieden/image/upload/v1544117673/ui-camera-black.svg"><p class="attributionText" style="margin-left:5px">SZBZ/Rebekka Groß</p></div></div></div>
